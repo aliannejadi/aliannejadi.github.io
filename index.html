@@ -1,1 +1,293 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>[ Mohammad Aliannejadi @ USI ]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90460014-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/menucollapse.js"></script>
+<script type="text/javascript" src="js/arrow78.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+<body id="page-top" class="index">
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span><a href="#"><img border="0" height="50" src="images/usi-logo.png"/></a></span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="index.html#intro">Introduction</a></li>
+                        <li><a target="_blank" href="https://goo.gl/6k4Jnk">CV (PDF)</a></li>
+                    </ul>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="index.html#publications">Publications</a>
+                </li>                
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="data.html#data">Data</a>
+                </li>                
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-9-content').show();" href="#links">Random Links</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section>
+    <!-- Place this tag where you want the search results to render -->
+    <gcse:searchresults-only></gcse:searchresults-only>
+</section>
+
+<!-- Home Section -->
+<section id="home" style="margin-top:40px">
+<div class="container">
+        <div align="left" class="col-md-3">
+            <a target="_blank" href="#">
+                <img id="mobile-img" src="images/alian-pic.jpg" width="250" border="0" height="250" alt=""></a>
+        </div>
+        <div align="left" class="col-md-4">
+            <h3>Mohammad Aliannejadi
+                <h5></h5></h3>
+
+            <h4>PhD Student<br>
+            Facutly of Informatics<br>
+            Università della Svizzera italiana (USI)<br>
+            Via G. Buffi 13<br>
+            6900, Lugano, Switzerland<br>
+            Tel/Fax: <a href="tel:0041586664455">+41 58 666 4455</a><br/>
+            Fax: <a href="tel:0041586664455">+41 58 666 4455</a><br/>
+            Email:
+            <script language="JavaScript">
+                <!--
+                document.write("&nbsp;");
+                spiderjam('mohammad.alian.nejadi','usi.ch');
+                -->
+            </script><br/>
+            <!-- Directions: <a target="_blank" href="http://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a> -->
+            </h4>
+        </div>
+
+        <i class="twittertop" style="display:none;" id="t1">
+        <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+            <center><a class="twitter-timeline" data-height="300" href="https://twitter.com/maliannejadi">Tweets by maliannejadi</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+        </div>
+        </i>
+
+
+
+        <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+        <i class="expandshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+        </i>
+        <i class="collapseshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+        </i>
+
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="intro">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+            <!--<h2>Welcome!</h2>-->
+
+            <i class="noshow" style="display:none;" id="tab-1">
+            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-1-content">
+            <hr class="star-primary">
+
+            <p class="lead">I am a PhD student in the Faculty of Informatics at the Università della Svizzera italiana (aka. University of Lugano), in Lugano, Switzerland. I completed my MSc degree in the Department of Computer Engineering and Information Techonologies at Tehran Polytechnic, Tehran, Iran.
+            </p>
+            <p>
+            My PhD Topic is on combining relevance criteria for mobile information retrieval. My supervisor is Prof. Fabio Crestani. 
+            My research interests include <b>Information Retrieval (IR)</b>, particularly <i>Mobile IR; Context-aware Recommendation; Natural Language Processing for IR.</i>
+            </p>
+            <p>
+            I have recently been selected as one of the <b>SIGIR Student Liaisons</b>, happily representing the students of Europe and Africa in our community. Please do contact me regarding any issues relevant to students. Read our recent article about the student liaison program on SIGIR Forum <a href="https://goo.gl/CW5Roj">here</a>.
+            </p>
+            <p>
+               <!-- <a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a> -->
+               <a href="https://goo.gl/6k4Jnk" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="twitterlow" style="display:none;" id="t1">
+<!-- News Section -->
+<section id="news">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-2">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-2-content').toggle();">News  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <i class="allshow" style="display:none;" id="tab-2-content">
+
+            <hr class="star-primary">
+
+            <h2>News</h2>
+            <center><a class="twitter-timeline" data-height="300" href="https://twitter.com/maliannejadi">Tweets by maliannejadi</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </center>
+            </i>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- Data Section -->
+<section id="data">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+            <h2>Data</h2>
+            We released the data collection that we crawled and used for our participations in the <b>TREC Contextual Suggestion track</b>. You can find more details on the data collection and how to gain access to it <a href="data.html#data">here</a>.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Research Section -->
+<section id="publications">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+            <h2>Publications</h2>
+
+            <ul>
+            	<li><span class="label label-success">SoAPS'18</span> <a target="" href="https://goo.gl/mo55xB">"Venue Suggestion Using Social-Centric Scores"</a>, Mohammad Aliannejadi and Fabio Crestani, <b>Workshop on Social Aspects in Personalization and Search (SoAPS) at ECIR'18</b>, Grenoble, France, 2018.</li>
+
+            	<li><span class="label label-success">SIGIR'17</span> <a target="" href="https://goo.gl/q1ZWEj">"A Cross-Platform Collection for Contextual Suggestion"</a>, Mohammad Aliannejadi, Ida Mele, and Fabio Crestani, <b>International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)</b>, Tokyo, Japan, 2017.</li>
+
+            	<li><span class="label label-success">SIGIR'17</span> <a target="" href="https://goo.gl/cKMJTj">"Venue Appropriateness Prediction for Personalized Context-Aware Venue Suggestion"</a>, Mohammad Aliannejadi and Fabio Crestani, <b>International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)</b>, Tokyo, Japan, 2017.</li>
+
+                 <li><span class="label label-success">ECIR'17</span> <a target="" href="https://goo.gl/vzhDXE">"Personalized Keyword Boosting for Venue Suggestion based on Multiple LBSNs"</a>, Mohammad Aliannejadi, Dimitrios Rafailidis, and Fabio Crestani, <b>European Conference on Information Retrieval (ECIR)</b>, Aberdeen, Scotland, UK, 2017 <font color="red">(long presentation)</font>.</li>
+                 
+                 <li><span class="label label-success">ACM SAC'17</span> <a target="" href="https://goo.gl/cnmelj">"Personalized Ranking for Context-Aware Venue Suggestion"</a>, Mohammad Aliannejadi, Ida Mele, and Fabio Crestani, <b>ACM Symposium on Applied Computing (ACM SAC)</b>, Marrakesh, Morocco, 2017.</li>
+                
+                <li><span class="label label-success">TREC'16</span> <a target="" href="https://goo.gl/VwpEdz">"Venue Appropriateness Prediction for Contextual Suggestion"</a>, Mohammad Aliannejadi, Ida Mele, and Fabio Crestani, <b>Text REtrieval Conference (TREC)</b>, Gaithersburgh, MD, USA, 2016. (<font color="red">Top 1</font> group in Contextual Suggestion Track, oral presentation) [<a target="_blank" href="https://goo.gl/Pvifj4">Slides</a>] </li>
+                
+                <li><span class="label label-success">AIRS'16</span> <a target="_blank" href="https://goo.gl/51gvd1">"User Model Enrichment for Venue Recommendation"</a>, Mohammad Aliannejadi, Ida Mele, and Fabio Crestani, <b>Asia Information Retrieval Societies Conference (AIRS)</b>, Beijing, China, 2016. [<a target="_blank" href="https://goo.gl/l9ciyo">Slides</a>]</li>
+
+                <li><span class="label label-success">TREC'15</span> <a target="_blank" href="https://goo.gl/EjraBb">"University of Lugano at TREC 2015: Contextual Suggestion and Temporal Summarization Tracks"</a>, Mohammad Aliannejadi, Seyed Ali Bahrainian, Anastasia Giachanou, and Fabio Crestani, <b>Text REtrieval Conference (TREC)</b>, Gaithersburgh, MD, USA, 2015. (<font color="red">Top 1</font> group in Contextual Suggestion Track, oral presentation) [<a target="_blank" href="https://goo.gl/QNDrEi">Slides</a>]</li>
+
+                <li><span class="label label-success">ALTW'14</span> <a target="_blank" href="https://goo.gl/apRdOv">"Graph-Based Semi-Supervised Conditional Random Fields For Spoken Language Understanding Using Unaligned Data"</a>, Mohammad Aliannejadi, Masoud Kiaeeha, Shahram Khadivi, and Saeed Shiry Ghidary, <b>Autsralasian Language Technology Workshop (ALTW)</b>, Melbourne, Australia, 2014.</li>
+
+                <li><span class="label label-success">Elsevier ASC'14</span> <a target="" href="https://goo.gl/6MFbjY">"Improved churn prediction in telecommunication industry using data mining techniques"</a>, Abbas Keramati, Ruholla Jafari-Marandi, Mohammad Aliannejadi, Iman Ahmadian, M. Mozaffari, and U. Abbasi, <b>Elsevier Journal of Applied Soft Computing (Elsevier ASC)</b>, Elsevier, vol. 24, pages 994 -- 1012, 2014.</li>
+
+                <li><span class="label label-success">AISP'13</span> <a target="_blank" href="https://goo.gl/Af4BO5">"Discriminative Spoken Language Understanding Using Statistical Machine Translation Alignment Methods"</a>, Mohammad Aliannejadi, Shahram Khadivi, Saied Shiry Ghidary, and Mohammad Hadi Bokaei, <b>International Symposium on Artificial Intelligence and Signal Processing (AISP)</b>, Tehran, Tehran, Iran, 2013.</li>
+                
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="links">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Random Links</h2>
+            <ul>
+                <li><span class="label label-success"><a target="_blank" href="https://goo.gl/DkxZeY"><font color="white">LinkedIn</font></a></span> My LinkedIn professional profile.</li>
+                <li><span class="label label-default"><a target="_blank" href="https://goo.gl/TmUbqv"><font color="white">Google Scholar</font></a></span> My Google Scholar profile.</li>
+                <li><span class="label label-info"><a target="_blank" href="https://goo.gl/F336oU"><font color="white">DBLP</font></a></span> List of my publications on DBLP.</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<hr class="star-primary">
+<footer>
+    <small>
+    
+    </small>
+</footer>
+
+</body>
+
+</html>
