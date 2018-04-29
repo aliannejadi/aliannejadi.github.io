@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>A Cross-Platform Data set for the TREC Contextual Suggestion track</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90460014-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/menucollapse.js"></script>
+<script type="text/javascript" src="js/arrow78.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+<body id="page-top" class="index">
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span><a href="#"><img border="0" height="50" src="images/usi-logo.png"/></a></span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="index.html#intro">Introduction</a></li>
+                        <li><a target="_blank" href="https://goo.gl/6k4Jnk">CV (PDF)</a></li>
+                    </ul>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="index.html#publications">Publications</a>
+                </li>                
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="data.html#data">Data</a>
+                </li>                
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-9-content').show();" href="#links">Random Links</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section>
+    <!-- Place this tag where you want the search results to render -->
+    <gcse:searchresults-only></gcse:searchresults-only>
+</section>
+
+<!-- Home Section -->
+<section id="home" style="margin-top:40px">
+<div class="container">
+        <div align="left" class="col-md-3">
+            <a target="_blank" href="#">
+                <img id="mobile-img" src="images/alian-pic.jpg" width="250" border="0" height="250" alt=""></a>
+        </div>
+        <div align="left" class="col-md-4">
+            <h3>Mohammad Aliannejadi
+                <h5></h5></h3>
+
+            <h4>PhD Student<br>
+            Facutly of Informatics<br>
+            Università della Svizzera italiana (USI)<br>
+            Via G. Buffi 13<br>
+            6900, Lugano, Switzerland<br>
+            Tel/Fax: <a href="tel:0041586664455">+41 58 666 4455</a><br/>
+            Fax: <a href="tel:0041586664455">+41 58 666 4455</a><br/>
+            Email:
+            <script language="JavaScript">
+                <!--
+                document.write("&nbsp;");
+                spiderjam('mohammad.alian.nejadi','usi.ch');
+                -->
+            </script><br/>
+            <!-- Directions: <a target="_blank" href="http://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a> -->
+            </h4>
+        </div>
+
+        <i class="twittertop" style="display:none;" id="t1">
+        <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+            <center><a class="twitter-timeline" data-height="300" href="https://twitter.com/maliannejadi">Tweets by maliannejadi</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+        </div>
+        </i>
+
+
+
+        <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+        <i class="expandshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+        </i>
+        <i class="collapseshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+        </i>
+
+    </div>
+</section>
+
+<div class="twitterlow" style="display:none;" id="t1">
+<!-- News Section -->
+<section id="news">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-2">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-2-content').toggle();">News  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <i class="allshow" style="display:none;" id="tab-2-content">
+
+            <hr class="star-primary">
+
+            <h2>News</h2>
+            <center><a class="twitter-timeline" data-height="300" href="https://twitter.com/maliannejadi">Tweets by maliannejadi</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </center>
+            </i>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- Data Section -->
+<section id="data">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Data  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+            <h2>Data</h2>
+
+            <ul>
+                <h3>TREC Contextual Suggestion</h3>           
+                    Throughout our participation in the <a target="_blank" href="https://goo.gl/xzGUVw">TREC Contextual Suggestion track</a>, we observed that the officially released data collection had many drawbacks. First, even though the organizers released a crawl of the collection in 2016, it is unstructured and does not introduce a homogeneous set of data. Hence most top-ranked systems ignored it and crawled their collections. For example in the following figure, we can see that every entry of the collection comes from a different source of information, and the source is often unrecognized: <br>
+                    <center><img border="0" width="90%" src="images/trec-sample.png"/></center>
+                    <br>
+                     Second, the collection has a set of contextual data such as type and duration of the trip. However, the contextual data was neglected by most of the participants. In particular, many of them just ignored the contextual information or used it with hand-crafted rule-based methods. It could be due to the current structure of the collection which does not give the researchers many options concerning context-aware recommendation.
+                     <p>
+                     In an attempt to address these limitations, we release a collection that was crawled very carefully to be homogeneous, cross-platform and context-aware. More specifically, we release the collection that we used for our participation at the TREC Contextual Suggestion track performing best in both phases of the track. The collection was crawled from two major LBSNs and comes with two crowdsourced contextual appropriateness collections. More details can be found in our <a target="" href="https://goo.gl/q1ZWEj">SIGIR resource paper</a> as well as the following:
+            	<li>
+                    <a target="" href="https://goo.gl/mu7XiN">"Contextual Appropriateness Features and Labels"</a>:  The contextual appropriateness collection consists of 1,969 pairs of trip descriptors and venue categories as features. In order to enable researchers to train their models using the contextual appropriateness of venues, we created another collection providing ground truth assessments for the contextual appropriateness of the venue categories. It completes the contextual information (i.e., trip type, group type, trip duration) for 10% of the whole TREC collection. This collection contains 760 rows including the features we already created using crowdsourcing and the context-appropriateness labels for venues.  The 10% of labeled data allows to model the venues’ contextual appropriateness given the users’ context and to make prediction for the remaining 90% of the data. 
+                    <p>
+                    Below, you can see a histogram of venue-context appropriateness score ranges. We partition the histogram into 3 parts based on the scores range. Scores below −0.4 represent inappropriateness and score higher than +0.4 represent appropriateness. Scores between −0.4 and +0.4 do not provide much information and show no agreement among assessors (subjective task): <br>
+                    <center><img border="0" width="50%" src="images/feature-histogram.png"/></center>
+                    <p>
+                    The following table summerizes the statistics of the two crowdsourced datasets: <br>
+                    <center><img border="0" src="images/context-stats.png"/></center>                                                                                               
+                    <p>
+                    The datasets are created using CrowdFlower and are both publicly available for research purposes. You can download them <a target="" href="https://goo.gl/mu7XiN">here</a>. Please remember to cite our <a target="" href="https://goo.gl/q1ZWEj">SIGIR resource paper</a> if you use this dataset. You can find the BibTeX <a target="" href="https://goo.gl/if3v4F">here</a>.
+                </li>
+                <li>
+                    <a target="" href="#">"Cross-Platform Collection for Contextual Suggestion"</a>:  The released collection contains more than 330K venues from Foursquare for TREC 2016 Contextual Suggestions track Phase 1 and 15,765 venues from both Foursquare and Yelp for TREC 2016 Contextual Suggestion Phase 2. As we observed in the data, there were many broken or unrelated links in the TREC collection (300K out of 600K). However, there were much fewer unrelated links for Phase 2 (3K out of 18K). For each venue, we release all available information: venue name, address, category, tags, ratings, reviews, check-in count, menu, opening hours, parking availability, etc. We release the collection that we used for our participation at the TREC Contextual Suggestion track performing best in both phases of the track. The collection was crawled from two major LBSNs: Foursquare and Yelp. We searched for the venues present in the TREC dataset on the LBSNs to find their corresponding profiles and verified the retrieved data very carefully to prevent adding any noise to the dataset. It is worth noting that more than half of the submitted systems to TREC 2016 had crawled data from either Yelp or Foursquare or both. More specifically, we observed that for 12 tasks, namely, the last 2 years with 2 phases each and taking into account the top 3 systems, 11/12 (=92%) of the systems had crawled data from one or both sources and 7/12 (=58%) of the systems crawled data from more than one LBSN. The release of this new collection will provide researchers with a unique opportunity to develop context-aware venue recommender systems under the same setting and data as one of the best-submitted systems in the TREC 2015 and 2016. This will enable them to compare their work with state-of-the-art approaches and explore the brand new venue-context appropriateness dataset.
+                    <p>
+                    Below you can find summerized statistics of the cralwed datasets: <br>
+                    <center><img border="0" src="images/trec-stats.png"/></center>
+                    <p>
+                    The datasets are freely available for research purposes. Please contact me if you are interested in these datasets. More information about the datasets is available in our <a target="" href="https://goo.gl/q1ZWEj">SIGIR resource paper</a>. Please remember to cite our paper if you use the datasets.You can find the BibTeX <a target="" href="https://goo.gl/if3v4F">here</a>.
+                </li>
+            </ul>
+            <ul>
+                <h3>Format</h3>
+                Upon downloading the data, you get 2 compressed files (approximately 400MB in size). You can uncompress them using gzip, zip etc.
+                The first compressed file contains two CSV files, one of which is the contextual features and the other the contextual labels.
+                Each row of the CSV file for contextual features has these fields:
+                <ul>
+                    <li> <b>ID:</b> a unique identifier for the feature</li>
+                    <li> <b>Trusted Judgements:</b> the number of workers who judged this feature and were trusted</li>
+                    <li> <b>Appropriateness Score:</b> the level of agreement between workers, which is also the appropriateness score of the feature. This field ranges from -1 to +1 (absolutely inappropriate to absolutely appropriate)</li>
+                    <li> <b>Category:</b> the venue category for which the feature is calculated</li>
+                    <li> <b>Context:</b> one the context descriptors for which the feature is calculated</li>
+                </ul>
+                Below is an example row from the feature set:
+                <pre>
+    ID      Trusted Judgements      Appropraiteness Score      Category    Context
+    85      7                       0.4272                     Museum      Group type: Friends    </pre>
+                Each row of the CSV file for contextual labels has these fields:
+                <ul>
+                    <li> <b>ID:</b> a unique identifier for the sample</li>
+                    <li> <b>Trusted Judgements:</b> the number of workers who judged this sample and were trusted</li>
+                    <li> <b>Appropriateness Score:</b> the level of agreement between workers, which is also the appropriateness score of the sample. This field ranges from -1 to +1 (absolutely inappropriate to absolutely appropriate)</li>
+                    <li> <b>Category:</b> the venue category for which the sample is labeled</li>
+                    <li> <b>Full Context:</b> the full context description for which the sample is annotated</li>
+                </ul>
+                Below is an example row from the contextual labels:
+                <pre>
+    ID      Trusted Judgements      Appropraiteness Score      Category    Full Context
+    60      4                       1                          Park        Holiday, Friends, Night out</pre>
+
+                <p>
+                The second compressed file contains all the crawled data in JSON format. Each JSON file contains information about a single venue. The files are named after the corresponding venue ID in the TREC collection (e.g., TRECCS-00000106-174). The JSON object is a dictionary with the following keys:
+                <ul>
+                    <li><b>Foursquare</b>: contains a dictionary of all information gathered from Foursquare</li>
+                        <ul>
+                            <li><b>categories</b>: list of categories associated to the venue</li>
+                            <li><b>keywords</b>: list of taste keywords associated to the venue</li>                            
+                            <li><b>location</b>: the address of the venue</li>
+                            <li><b>name</b>: the name of the venue as mentioned in Foursquare</li>                            
+                            <li><b>overall_rating</b>: the average rating of all user ratings</li>
+                            <li><b>phone</b>: the phone number of the venue</li>
+                            <li><b>reviews_detail</b>: list of user tips about the venue</li>
+                                <ul>
+                                    <li><b>comment</b>: full text of the tip</li>
+                                </ul>
+                            <li><b>taste_matches</b>: list of all taste-related terms in the tips as identified by Foursquare</li>
+                        </ul>
+                    <li><b>Yelp</b>: contains a dictionary of all information gathered from Yelp</li>
+                        <ul>
+                            <li><b>categories</b>: list of categories associated to the venue</li>
+                            <li><b>subcategories</b>: list of subcategories associated to the venue</li>
+                            <li><b>good_for</b>: list of items that are marked as "good for" in Yelp</li>
+                            <li><b>location</b>: the address of the venue</li>
+                            <li><b>name</b>: the name of the venue as mentioned in Yelp</li>
+                            <li><b>openin_hours</b>: list of opening hours for all weekdays</li>
+                            <li><b>overall_rating</b>: the average rating of all user ratings</li>
+                            <li><b>phone</b>: the phone number of the venue</li>
+                            <li><b>reviews_detail</b>: list of user reviews about the venue</li>
+                                <ul>
+                                    <li><b>comment</b>: full text of the review</li>
+                                    <li><b>date</b>: the date that the review is written</li>
+                                    <li><b>rating</b>: user rating associated with the review</li>
+                                    <li><b>user_id</b>: ID of the user who left the review</li>
+                                    <li><b>user_name</b>: name of the user who left the review</li>
+                                    <li><b>user_review_cnt</b>: total number of the reviews the user has left on Yelp</li>
+                                </ul>
+                            <li><b>total_reivew_number</b>: total number of user reviews for the venue</li>
+                            <li><b>url</b>: link to the venue's homepage</li>
+                        </ul>                    
+                    Below is an example from the dataset: (content has been shortened)
+                    <pre>
+{
+    "Foursquare": {
+        "categories": [
+            "Southern / Soul Food Restaurant", 
+            "American Restaurant", 
+            "Restaurant"
+        ], 
+        "keywords": [
+            "biscuits", 
+            "grits", 
+            ...
+        ], 
+        "location": {
+            "addressLocality": "Charlotte", 
+            "addressRegion": "NC", 
+            "postalCode": "28203", 
+            "streetAddress": "1820 South Blvd"
+        }, 
+        "name": "Tupelo Honey Cafe", 
+        "overall_rating": 9.0, 
+        "reviews_detail": [
+            {
+                "comment": "I can't find a bad dish,...
+            }
+        ],
+         "taste_matches": [
+            "martini's", 
+            "Rosemary", 
+            "Lime", 
+            "Shrimp",
+            ...
+        ]
+    },
+    "Yelp": {
+        "categories": [
+            "Southern", 
+            "American (New)", 
+            "Breakfast & Brunch"
+        ], 
+        "good_for": [
+            " brunch", 
+            " kids", 
+            " groups"
+        ], 
+        "location": {
+            "addressLocality": "Charlotte", 
+            "addressRegion": "NC", 
+            "postalCode": "28203", 
+            "streetAddress": "1820 South Blvd"
+        }, 
+        "name": "Tupelo Honey Cafe", 
+        "opening_hours": [
+            [
+                "11:00 am", 
+                "9:00 pm"
+            ], 
+            ...
+        ], 
+        "overall_rating": 4.0, 
+        "phone": "(980) 225-9175", 
+        "reviews_detail": [
+            {
+                "comment": "I've been dying to try this place so I stopped in. The menu is plentiful with appetizers, ...
+                "date": "2016-08-21", 
+                "rating": 4.0, 
+                "user_id": "http://www.yelp.com/user_details...", 
+                "user_name": "...", 
+                "user_review_cnt": 41
+            }
+        ],
+        "total_review_number": "728", 
+        "subcategories": ...,
+        "url": ...
+    }
+}</pre>
+                </ul>
+            </ul>
+            <ul>
+                <h3>Citing</h3>
+                <pre>
+     @inproceedings{AliannejadiSigir17b,
+          author    = {Mohammad Aliannejadi and Ida Mele and Fabio Crestani},
+          title     = {A Cross-Platform Collection for Contextual Suggestion},
+          booktitle = {{SIGIR}},
+          pages     = {1269--1272},
+          publisher = {{ACM}},
+          month = {August},
+          year      = {2017}
+        }</pre>
+            </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Link Section -->
+<section id="links">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Random Links</h2>
+            <ul>
+                <li><span class="label label-success"><a target="_blank" href="https://goo.gl/DkxZeY"><font color="white">LinkedIn</font></a></span> My LinkedIn professional profile.</li>
+                <li><span class="label label-default"><a target="_blank" href="https://goo.gl/TmUbqv"><font color="white">Google Scholar</font></a></span> My Google Scholar profile.</li>
+                <li><span class="label label-info"><a target="_blank" href="https://goo.gl/F336oU"><font color="white">DBLP</font></a></span> List of my publications on DBLP.</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<hr class="star-primary">
+<footer>
+    <small>
+    
+    </small>
+</footer>
+
+</body>
+
+</html>
