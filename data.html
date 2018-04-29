@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>[ Mohammad Aliannejadi @ USI ]</title>
+<title>A Cross-Platform Data set for the TREC Contextual Suggestion track</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Font Awesome Icons -->
@@ -190,10 +190,10 @@
                     <a target="" href="https://goo.gl/mu7XiN">"Contextual Appropriateness Features and Labels"</a>:  The contextual appropriateness collection consists of 1,969 pairs of trip descriptors and venue categories as features. In order to enable researchers to train their models using the contextual appropriateness of venues, we created another collection providing ground truth assessments for the contextual appropriateness of the venue categories. It completes the contextual information (i.e., trip type, group type, trip duration) for 10% of the whole TREC collection. This collection contains 760 rows including the features we already created using crowdsourcing and the context-appropriateness labels for venues.  The 10% of labeled data allows to model the venues’ contextual appropriateness given the users’ context and to make prediction for the remaining 90% of the data. 
                     <p>
                     Below, you can see a histogram of venue-context appropriateness score ranges. We partition the histogram into 3 parts based on the scores range. Scores below −0.4 represent inappropriateness and score higher than +0.4 represent appropriateness. Scores between −0.4 and +0.4 do not provide much information and show no agreement among assessors (subjective task): <br>
-                    <center><img border="0" height="70%" src="images/feature-histogram.png"/></center>
+                    <center><img border="0" width="50%" src="images/feature-histogram.png"/></center>
                     <p>
                     The following table summerizes the statistics of the two crowdsourced datasets: <br>
-                    <center><img border="0" height="70%" src="images/context-stats.png"/></center>                                                                                               
+                    <center><img border="0" src="images/context-stats.png"/></center>                                                                                               
                     <p>
                     The datasets are created using CrowdFlower and are both publicly available for research purposes. You can download them <a target="" href="https://goo.gl/mu7XiN">here</a>. Please remember to cite our <a target="" href="https://goo.gl/q1ZWEj">SIGIR resource paper</a> if you use this dataset. You can find the BibTeX <a target="" href="https://goo.gl/if3v4F">here</a>.
                 </li>
@@ -201,7 +201,7 @@
                     <a target="" href="#">"Cross-Platform Collection for Contextual Suggestion"</a>:  The released collection contains more than 330K venues from Foursquare for TREC 2016 Contextual Suggestions track Phase 1 and 15,765 venues from both Foursquare and Yelp for TREC 2016 Contextual Suggestion Phase 2. As we observed in the data, there were many broken or unrelated links in the TREC collection (300K out of 600K). However, there were much fewer unrelated links for Phase 2 (3K out of 18K). For each venue, we release all available information: venue name, address, category, tags, ratings, reviews, check-in count, menu, opening hours, parking availability, etc. We release the collection that we used for our participation at the TREC Contextual Suggestion track performing best in both phases of the track. The collection was crawled from two major LBSNs: Foursquare and Yelp. We searched for the venues present in the TREC dataset on the LBSNs to find their corresponding profiles and verified the retrieved data very carefully to prevent adding any noise to the dataset. It is worth noting that more than half of the submitted systems to TREC 2016 had crawled data from either Yelp or Foursquare or both. More specifically, we observed that for 12 tasks, namely, the last 2 years with 2 phases each and taking into account the top 3 systems, 11/12 (=92%) of the systems had crawled data from one or both sources and 7/12 (=58%) of the systems crawled data from more than one LBSN. The release of this new collection will provide researchers with a unique opportunity to develop context-aware venue recommender systems under the same setting and data as one of the best-submitted systems in the TREC 2015 and 2016. This will enable them to compare their work with state-of-the-art approaches and explore the brand new venue-context appropriateness dataset.
                     <p>
                     Below you can find summerized statistics of the cralwed datasets: <br>
-                    <center><img border="0" height="70%" src="images/trec-stats.png"/></center>
+                    <center><img border="0" src="images/trec-stats.png"/></center>
                     <p>
                     The datasets are freely available for research purposes. Please contact me if you are interested in these datasets. More information about the datasets is available in our <a target="" href="https://goo.gl/q1ZWEj">SIGIR resource paper</a>. Please remember to cite our paper if you use the datasets.You can find the BibTeX <a target="" href="https://goo.gl/if3v4F">here</a>.
                 </li>
