@@ -9,7 +9,7 @@ nav_order: 3
 
 ### Postdocs
 
-- **Fahimeh Moafian** (since 2026): large language models. [Announcement](https://irlab.science.uva.nl/2026/10/09/fahimeh-moafian-joins-irlab-as-a-postdoc/)
+- **Fahimeh Moafian** (since 2026): multimodal retrieval-augmented generation (RAG) systems. [Announcement](https://irlab.science.uva.nl/2026/10/09/fahimeh-moafian-joins-irlab-as-a-postdoc/)
 
 ### PhD students
 
@@ -21,7 +21,7 @@ nav_order: 3
 ### Past PhD students
 
 - **Clemencia Siro** (Ph.D. 2025): _Rethinking the Human-Centered Evaluation of Conversational Systems_. Now a postdoc at CWI, joining TU Delft as an assistant professor. [Homepage](https://clemenciah.github.io/) · [Scholar](https://scholar.google.com/citations?user=VSJ78nMAAAAJ)
-- **Chuan Meng** (Ph.D. 2025): _Optimizing Agentic Workflows for Information Access_. Now a postdoc at the University of Edinburgh. [Homepage](https://chuanmeng.github.io/) · [Scholar](https://scholar.google.com/citations?user=F5gFxkcAAAAJ)
+- **Chuan Meng** (Ph.D. 2025): _Optimizing Agentic Workflows for Information Access_. Now a postdoctoral researcher at [EdinburghNLP](https://edinburghnlp.inf.ed.ac.uk/), University of Edinburgh. [Homepage](https://chuanmeng.github.io/) · [Scholar](https://scholar.google.com/citations?user=F5gFxkcAAAAJ)
 
 ### Past visitors
 

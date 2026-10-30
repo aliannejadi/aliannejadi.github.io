@@ -13,7 +13,7 @@ nav_order: 4
 - **[TREC iKAT](https://www.trecikat.com/)** (2023–2025): test collections for personalized conversational search. 2023 collection and tools: [GitHub](https://github.com/irlabamsterdam/iKAT) ([SIGIR 2024](https://arxiv.org/abs/2405.02637)); the 2025 collection appears at SIGIR 2026.
 - **[CONE-RAG](https://github.com/irlabamsterdam/CONE-RAG)** (SIGIR 2025): gold nuggets for evaluating personalized conversational RAG ([paper](https://arxiv.org/abs/2503.09902)).
 - **[LLMJudge](https://github.com/llm4eval/LLMJudge)**: the LLM4Eval relevance-judgment challenge, and **[Judging the Judges](https://llm4eval.github.io/LLMJudge-benchmark/)**, a collection of LLM-generated relevance judgments ([paper](https://arxiv.org/abs/2502.13908)).
-- **[RAVENEA](https://github.com/yfyuan01/RAVENEA)**: multimodal retrieval-augmented visual culture understanding ([paper](https://arxiv.org/abs/2505.14462)).
+- **[RAVENEA](https://github.com/yfyuan01/RAVENEA)** (ICLR 2026): multimodal retrieval-augmented visual culture understanding ([paper](https://openreview.net/forum?id=4zAbkxQ23i)).
 - **[MCPQA](https://github.com/yfyuan01/MCPQA)** (EMNLP 2024): multilingual cross-market product question answering.
 - **[PSCon](https://github.com/JieZouIR/PSCon)** (SIGIR 2025): product search through conversations.
 - **[XMarket](https://xmrec.github.io/)**: cross-market product recommendation data from Amazon, used in the [XMRec WSDM Cup](https://xmrec.github.io/wsdmcup/) ([CIKM 2021](https://arxiv.org/abs/2109.05929)).
