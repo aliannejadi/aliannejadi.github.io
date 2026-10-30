@@ -360,6 +360,9 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
+  # within a year, later conferences first (month field holds the venue's usual month)
+  sort_by: year,month
+  order: descending,descending
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid

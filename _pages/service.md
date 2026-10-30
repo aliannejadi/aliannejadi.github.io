@@ -9,8 +9,6 @@ nav_order: 5
 
 ### Conference roles
 
-- Local Organization Chair, **EACL 2026**
-- Co-editor of the **ECIR 2026** proceedings (Springer LNCS)
 - Tutorial Co-chair, **ECIR 2024**
 - Program Co-chair, **[ICTIR 2023](https://sigir.org/ictir2023/)**, co-located with SIGIR 2023 in Taipei
 - Lab Co-chair, **CLEF 2023**
@@ -22,7 +20,7 @@ nav_order: 5
 ### Shared tasks and competitions
 
 - Co-organizer, **[TREC iKAT](https://www.trecikat.com/)** (Interactive Knowledge Assistance Track), 2023–2025
-- Co-organizer, **TREC CAsT** (lead organizer of the mixed-initiative subtask)
+- Co-organizer, **[TREC CAsT](https://www.treccast.ai/)** (Conversational Assistance Track; lead organizer of the mixed-initiative subtask)
 - Co-organizer, **[IGLU](https://www.iglu-contest.net/home)** competition at NeurIPS 2021 and 2022
 - Co-organizer, **[XMRec WSDM Cup](https://xmrec.github.io/wsdmcup/)** on cross-market recommendation
 - Challenge Chair, **ConvAI3: ClariQ** at SCAI@EMNLP 2020
@@ -59,8 +57,10 @@ nav_order: 5
 
 ### Teaching at UvA
 
-- Information Retrieval (IR0), B.Sc. AI, 2022–2023
-- Human-in-the-Loop Machine Learning, M.Sc. AI, 2023
-- Applied Machine Learning, B.Sc., 2021
-- Guest lectures in IR1, IR2, AML, and SIKS courses
+- Information Retrieval (IR0), 2022–present
+- Information Retrieval 2 (IR2), 2024–present
+- Project AI, 2024–present
+
+### University service
+
 - Member of the Program Committee of the Bachelor in AI (OCAI), Informatics Institute, since 2024
