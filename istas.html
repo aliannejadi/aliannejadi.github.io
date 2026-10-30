@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>ISTAS: an in situ collection of mobile cross-app search queries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90460014-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/menucollapse.js"></script>
+<script type="text/javascript" src="js/arrow78.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+<body id="page-top" class="index">
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span><a href="#"><img border="0" height="50" src="images/usi-logo.png"/></a></span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="index.html#intro">Introduction</a></li>
+                        <li><a target="_blank" href="https://goo.gl/6k4Jnk">CV (PDF)</a></li>
+                    </ul>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="index.html#publications">Publications</a>
+                </li>                
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Data<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a target="_blank" href="istas.html">ISTAS: an in situ collection of mobile cross-app search queries</a></li>
+                    <li><a target="_blank" href="unimobile.html">UniMobile: a collection of mobile cross-app search queries</a></li>    
+                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="data.html#data">A Cross-Platform Data set for the TREC Contextual Suggestion track</a></li>                        
+                    </ul>
+                </li>               
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-9-content').show();" href="#links">Random Links</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section>
+    <!-- Place this tag where you want the search results to render -->
+    <gcse:searchresults-only></gcse:searchresults-only>
+</section>
+
+
+<!-- Data Section -->
+<section id="data">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Data  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+            <h2>Data</h2>
+
+            <ul>
+                <h3>ISTAS: an in situ collection of cross-app mobile search queries <span class="label label-success"><a href="http://bit.ly/ISTASGitHub"><font color="white">Download ISTAS</font></a></span></h3>  
+                    <p>         
+                        Recent years have witnessed a rapid growth in the use of mobile devices, enabling people to access the Internet in various contexts. <a href="http://www.pewinternet.org/fact-sheet/mobile/" target="_blank">More than 77% of Americans now own a smartphone</a>, with an increasing trend in terms of the time people spend on their phones.                     
+                        More recently, with the release of intelligent assistants such as Google Assistant, Apple Siri, and Microsoft Cortana, people are experiencing mobile search through a single voice-based interface. These systems introduce several research challenges. <a href="http://flurrymobile.tumblr.com/post/157921590345/us-consumers-time-spent-on-mobile-crosses-5" target="_blank">Given that people spend most of their times in apps</a> and, as a consequence, most of their search interactions would be with apps (rather than a browser), one limitation is that users are unable to use a intelligent assistants to search within many apps.      
+                    </p>
+                    <p>
+                        So far, all the studies on mobile information retrieval have focused on a single interface for search (i.e., Google, Bing, etc.). However, in our previous work [1], we showed that this is no longer the case with the availability of various apps featuring their own search engine. Nowadays, users tend to search for various modalities of information using different apps. As of 2016, the average U.S. user spends 5 hours on mobile devices per day, with just 8% of it spent in the phone's browser. In fact, <a href="http://flurrymobile.tumblr.com/post/157921590345/us-consumers-time-spent-on-mobile-crosses-5" target="_blank">people spend most of their time (72%) using apps that have their own search feature</a>. Moreover, according to [1], instead of Web search apps such as Google and Bing, users prefer to submit the majority of their queries to a more specific app.
+                    </p>
+                    <p>
+                        In this data collection, we are particularly interested in addressing most of the limitations of <a href="unimobile.html">UniMobile</a>. In other words, as we evaluated the need for a unified mobile search system in [1] through the collection of <a href="unimobile.html">UniMobile</a> via crowdsourcing, in this collection our goal was to collect a more realistic data collection, enriched with users' contexts (i.e., time and app usage statistics). Hence, we recruited 255 participants through an open online call asking them to install <a href="http://bit.ly/uSearchOnGitHub">uSearch</a> on their smartphones and let it run for at least 24 hours. During the study, we asked the participants to report their mobile searches using uSearch as soon as they did the search. A search report consisted of the search query as well as the app in which the search was done. For instance, if a participant entered the query "vegan pasta recipe" in the YouTube app, they would report their search as shown in the image below: <br>
+                        <center><img src="images/istas_example.png" alt="Query report example" width="35%"/></center>
+                    </p>
+                <ul>
+                    <li>
+                        <b>uSearch:</b> In order to facilitate the query report procedure, we developed <a href="http://bit.ly/uSearchOnGitHub">uSearch</a>, an Android app shown in figures below.
+                        As shown below, uSearch consists of three sections. The upper part lists all the apps that are installed on the phone, with the most used apps ranked higher. The participants were supposed to select the app in which they had done their real-life search (e.g., Facebook). In the second section, the participants were supposed to enter exactly the same query that they had entered in the target app. Finally, the lower part of the app, provided them easy access to a unique ID of their device and an online survey on their demographics and backgrounds. 
+
+                        <center><img border="0" width="75%" src="images/istas/usearch_screen.png"/></center>
+                    </li>
+                    <li>
+                        <b>Method:</b> We recruited participants through an online platform. In the announcement, we provided all the details about the intention of the study as well as the data we were collecting. First, we asked them to complete a survey. Moreover, we mentioned all the steps required to be done by the participants in order to report a query. In short, we asked them to open uSearch after every search they did using any installed app on their phones. Then, we asked them to report the app as well as the query they used to perform their search task. We encouraged the participants to report their search as soon as it occurs, as it is very crucial to capture their context at the right moment. 
+                        <p>    
+                        After running several pilot studies, over the period of 12 weeks we recruited 255 participants, asking them to let the app running on their smartphones for at least 24 hours and report at least 5 queries. Since some people may not submit 5 search queries during the period of 24 hours, we asked them to keep the app running on their phones after the first 24 hours until they report 5 queries. Also, we encouraged them to continue reporting more than 5 queries for an additional reward. The figure below shows the distribution of number of users and queries during the period of data collection.
+
+                        <center><img border="0" width="75%" src="images/istas/user_query_per_day.png"/></center>
+                    </li>
+
+                    <li>
+                        <b>Basic Statistics:</b> During the study period, with the help of 255 participants, we were able to collect 6,877 search queries and their target apps as well as sensor and usage data.
+                        Here, we summarize the main characteristics of the participants based on the submitted surveys. 59% of the participants were female and 50% aged between 25 and 34. Participants were from all kinds of educational backgrounds ranging from high school diploma to PhD. In particular, 32% of them had a college degree, followed by 30% with a bachelor's degree. Smartphone was the main device used for connecting to the Internet for 53% of the participants, followed by laptop (25%). Among the participants, 67% used their smartphones more often for personal reasons rather than work. Finally, half of the participants stated that they use their smartphones 4 hours a day or more. More insights about ISTAS is available in the table below. For more detailed analysis please refer to our <a href="http://bit.ly/2Nzi1Sz">paper</a>.
+
+                        <center><img border="0" width="50%" src="images/istas/basic_stats.png"/></center>
+                    </li>
+                </ul>
+            </ul>
+            <ul>
+                <h3>Download</h3> ISTAS data collection can be downloaded as a ZIP file <a href="http://bit.ly/ISTAS">here</a>. If you use ISTAS dataset in your next research paper, please consider citing our paper, using this <a href="http://bit.ly/2PszvBZ">BibTeX file</a>. <br>
+                <b>Note:</b> We only release the data that we used in our CIKM '18 paper [2]. Parts of the data cannot be released due to privacy issues. However, if you need more data, please contact us. We try to release non-sensitive data upon request.
+            </ul>
+            <ul>
+                <h3>Format</h3>
+                Upon downloading the data, you get one compressed file. You can uncompress it using gzip, zip etc.
+                The main file is a JSON file, called istas.json, which contains the mobile search tasks.
+                istas.json can be easily read using pandas read_json function.
+
+                Each row of the ISTAS consists of the following columns:
+                <ul>
+                    <li> <b>timestamp:</b> time when the search was reported.</li>
+                    <li> <b>UserID:</b> the unique user identifier.</li>
+                    <li> <b>Query:</b> the query that was submitted to complete the search.</li>
+                    <li> <b>App:</b> the app that was used to complete the search.</li>                    
+                    <li> <b>AppUsages:</b> JSON dict object containing Android's app usage statistics of 24 hours before submitting the query.</li>
+                </ul>
+                Below are two example rows from the tasks file:
+                <pre>    
+    <b>timestamp                   UserID      Query                           App             AppUsages</b>
+    2018-04-17 20:28:43.438     225         photo storage ideas             pinterest       {'Duration': {'amazon_shopping': 54944, 'andro...'}}
+    2018-04-08 16:43:19.674     219         cupping to reduce cellulite     chrome          {'Duration': {'accuweather': 304542, 'amazon_k...'}}</pre>
+                <p>
+            </ul>
+            <ul>
+                <h3>Citation</h3>
+                <pre>
+     @inproceedings{AliannejadiCikm18,
+          author    = {Aliannejadi, Mohammad and Zamani, Hamed and Crestani, Fabio and Croft, W. Bruce},
+          title     = {In Situ and Context-Aware Target Apps Selection  for Unified Mobile Search},
+          booktitle = {Proceedings of the 27th {ACM} International Conference on
+               Information and Knowledge Management},
+          series    = {{CIKM '18}},
+          location  = {Torino, Italy},          
+          year      = {2018}
+        }</pre>
+            </ul>
+            <ul>
+                <h3>Acknowledgments</h3>
+                This work was a joint effort by Università della Svizzera italiana (USI), Lugano, Switzerland and University of Massachusetts Amherst, Amherst, MA, USA.
+                Thanks to Jacopo Fidacaro, Luca Costa, Mohammad Aliannejadi, Hamed Zamani, Fabio Crestani and W. Bruce Croft for their efforts in developing this dataset.
+            </ul>
+            <ul>
+                <h3>References</h3>
+                [1] Mohammad Aliannejadi, Hamed Zamani, Fabio Crestani, and W. Bruce Croft. 2018. Target Apps Selection: Towards a Unified Search Framework for Mobile Devices. In Proceedings of the 41st International ACM SIGIR Conference on Research and Development in Information Retrieval. <br>
+                [2] Mohammad Aliannejadi, Hamed Zamani, Fabio Crestani, and W. Bruce Croft. 2018. In Situ and Context-Aware Target Apps Selection  for Unified Mobile Search. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management.
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Link Section -->
+<section id="links">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Random Links</h2>
+            <ul>
+                <li><span class="label label-success"><a target="_blank" href="https://goo.gl/DkxZeY"><font color="white">LinkedIn</font></a></span> My LinkedIn professional profile.</li>
+                <li><span class="label label-default"><a target="_blank" href="https://goo.gl/TmUbqv"><font color="white">Google Scholar</font></a></span> My Google Scholar profile.</li>
+                <li><span class="label label-info"><a target="_blank" href="https://goo.gl/F336oU"><font color="white">DBLP</font></a></span> List of my publications on DBLP.</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<hr class="star-primary">
+<footer>
+    <small>
+    
+    </small>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(document).click(function(a){var n=$(a.target);!0!==$(".navbar-collapse").hasClass("navbar-collapse in")||n.hasClass("navbar-toggle")||$("button.navbar-toggle").click()})});
