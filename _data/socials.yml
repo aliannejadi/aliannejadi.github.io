@@ -1,0 +1,13 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: m.aliannejadi@uva.nl # your email address
+scholar_userid: yiZk6coAAAAJ # your Google Scholar ID
+semanticscholar_id: 3390352 # your Semantic Scholar ID
+dblp_url: https://dblp.org/pers/hd/a/Aliannejadi:Mohammad # your DBLP profile url
+orcid_id: 0000-0002-9447-4172 # your ORCID ID
+github_username: aliannejadi # your GitHub user name
+linkedin_username: maliannejadi # your LinkedIn user name
+x_username: maliannejadi # your X (formerly Twitter) username
+cv_pdf: /alian-cv.pdf # path to your CV PDF file
+rss_icon: false # comment this line to hide the RSS icon
