@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /group/
-title: group
+permalink: /people/
+title: people
 description: Students and researchers I (co-)supervise at the IRLab, University of Amsterdam.
 nav: true
 nav_order: 3
