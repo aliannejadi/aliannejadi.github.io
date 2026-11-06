@@ -25,9 +25,9 @@ nav_order: 3
 
 ### Past visitors
 
-- **Mehrdad Rostami** (Nov–Dec 2023)
-- **Saedeh Tahery** (Jun–Dec 2023)
-- **Negin Ghasemi** (Oct 2022–Mar 2023)
+- **Mehrdad Rostami** (Nov–Dec 2023): visiting PhD student from the University of Oulu, now a researcher at the University of Oulu.
+- **Saedeh Tahery** (Jun–Dec 2023): visiting PhD student from K.N. Toosi University of Technology, now a lecturer at Shahid Rajaee Teacher Training University.
+- **Negin Ghasemi** (Oct 2022–Mar 2023): visiting PhD student from Radboud University, now a machine learning engineer at Booking.com.
 - **Yifei Yuan** (2022–2023): visiting PhD student from the Chinese University of Hong Kong, now a postdoc at the Swiss Data Science Center, ETH Zürich. [Homepage](https://yfyuan01.github.io/) · [Scholar](https://scholar.google.com/citations?user=2LQnqqAAAAAJ)
 
 ### Join us
