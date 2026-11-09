@@ -25,6 +25,7 @@ nav_order: 3
 
 ### Past visitors
 
+- **Arian Askari** (Dec 2022–Apr 2024): visiting PhD student from Leiden University, now a senior machine learning scientist at ING.
 - **Mehrdad Rostami** (Nov–Dec 2023): visiting PhD student from the University of Oulu, now a researcher at the University of Oulu.
 - **Saedeh Tahery** (Jun–Dec 2023): visiting PhD student from K.N. Toosi University of Technology, now a lecturer at Shahid Rajaee Teacher Training University.
 - **Negin Ghasemi** (Oct 2022–Mar 2023): visiting PhD student from Radboud University, now a machine learning engineer at Booking.com.
